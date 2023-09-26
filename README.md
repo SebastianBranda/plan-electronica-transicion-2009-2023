@@ -1,8 +1,6 @@
-# React + Vite
+# Transición entre planes 2009 y 2023
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simulación de la transición entre el plan 2009 (rev 2018) y el plan 2023 de la carrera Ingenieria Electrónica de la FIUBA
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Al parecer hay algunas equivalencias que deben ser confirmadas por la comisión curricular
+- Sitio creado por un alumno para uso personal, tomar la información con pinzas
