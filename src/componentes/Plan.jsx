@@ -8,6 +8,7 @@ export const Plan = ({
   aprobadas,
   setAprobadas,
   creditosMateriasDadasDeBaja = 0,
+  creditosCarrera = 0,
 }) => {
   const materiasAprobadas = materiasPlan.filter((materia) => {
     return aprobadas.includes(materia.nombreMateria);
@@ -41,8 +42,11 @@ export const Plan = ({
         {title}
       </Typography>
       <List>{materias}</List>
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h6" gutterBottom>
         Total creditos: {sumaCreditos}
+      </Typography>
+      <Typography variant="h6" gutterBottom>
+        Total carrera: {creditosCarrera}
       </Typography>
     </>
   );

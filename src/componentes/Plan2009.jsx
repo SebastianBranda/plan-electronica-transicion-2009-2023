@@ -11,6 +11,7 @@ export const Plan2009 = () => {
       materiasPlan={plan2009}
       aprobadas={aprobadas2009}
       setAprobadas={setAprobadas2009}
+      creditosCarrera={278}
     />
   );
 };

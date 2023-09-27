@@ -38,6 +38,7 @@ export const Plan2023 = () => {
       materiasPlan={plan2023}
       aprobadas={aprobadas}
       creditosMateriasDadasDeBaja={creditosMateriasDadasDeBaja}
+      creditosCarrera={228}
     />
   );
 };
