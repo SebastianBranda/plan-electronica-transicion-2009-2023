@@ -21,7 +21,7 @@ const plan2009MateriasDadasDeBaja = [
     },
     {
         nombreMateria: "Laboratorio de Instalaciones Eléctricas",
-        creditoExcedentePorEquivalencia: 6,
+        creditoExcedentePorEquivalencia: 4,
     },
     {
         nombreMateria: "Teoría de la Información Codificación",
@@ -97,11 +97,11 @@ const plan2009MateriasDadasDeBaja = [
     },
     {
         nombreMateria: "Teoría de Lenguajes de Programación",
-        creditoExcedentePorEquivalencia: 6,
+        creditoExcedentePorEquivalencia: 4,
     },
     {
         nombreMateria: "Taller de Programación",
-        creditoExcedentePorEquivalencia: 6,
+        creditoExcedentePorEquivalencia: 4,
     },
     {
         nombreMateria: "Técnicas de Programación Concurrente I",
@@ -109,11 +109,11 @@ const plan2009MateriasDadasDeBaja = [
     },
     {
         nombreMateria: "Introduccion al Diseño Asistido por Computadora",
-        creditoExcedentePorEquivalencia: 6,
+        creditoExcedentePorEquivalencia: 2,
     },
     {
         nombreMateria: "Analisis Matematico 3",
-        creditoExcedentePorEquivalencia: 6,
+        creditoExcedentePorEquivalencia: 4,
     },
 ]
 
