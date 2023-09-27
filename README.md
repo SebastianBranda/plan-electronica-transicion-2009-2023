@@ -3,4 +3,5 @@
 Simulación de la transición entre el plan 2009 (rev 2018) y el plan 2023 de la carrera Ingenieria Electrónica de la FIUBA
 
 - Al parecer hay algunas equivalencias que deben ser confirmadas por la comisión curricular
-- Sitio creado por un alumno para uso personal, tomar la información con pinzas
+- Creado por un alumno para uso personal, tomar la información con pinzas
+- Toda colaboración es bienvenida

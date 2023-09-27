@@ -117,4 +117,5 @@ const plan2009MateriasDadasDeBaja = [
     },
 ]
 
-module.exports = { plan2009MateriasDadasDeBaja }
+// module.exports = { plan2009MateriasDadasDeBaja }
+export { plan2009MateriasDadasDeBaja }
