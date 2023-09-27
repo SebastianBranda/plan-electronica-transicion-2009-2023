@@ -6,11 +6,7 @@ import { Plan2009 } from './componentes/Plan2009';
 import { Plan2023 } from './componentes/Plan2023';
 
 function App() {
-  const [aprobadas2009, setAprobadas2009] = useState([
-    'CBC',
-    'Analisis Matematico 2',
-    'Fisica 1',
-  ]);
+  const [aprobadas2009, setAprobadas2009] = useState([]);
 
   return (
     <Plan2009Context.Provider value={{ aprobadas2009, setAprobadas2009 }}>
