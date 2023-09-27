@@ -7,13 +7,30 @@ export const Plan = ({
   title = 'Plan',
   aprobadas,
   setAprobadas,
+  creditosMateriasDadasDeBaja = 0,
 }) => {
+  const materiasAprobadas = materiasPlan.filter((materia) => {
+    return aprobadas.includes(materia.nombreMateria);
+  });
+  const sumaCreditosAprobadas = materiasAprobadas.reduce((acc, curr) => {
+    return acc + curr.creditos;
+  }, 0);
+  const creditosExcedentes = materiasAprobadas.reduce((acc, curr) => {
+    return acc + curr.creditoExcedentePorEquivalencia;
+  }, 0);
+
+  const sumaCreditos =
+    sumaCreditosAprobadas +
+    creditosMateriasDadasDeBaja +
+    (isNaN(creditosExcedentes) ? 0 : creditosExcedentes);
+
   const materias = materiasPlan.map((materia, i) => (
-    <ListItem key={i}>
+    <ListItem key={i} dense={true}>
       <Materia
         materia={materia}
         aprobadas={aprobadas}
         setAprobadas={setAprobadas}
+        sumaCreditos={sumaCreditos}
       />
     </ListItem>
   ));
@@ -24,6 +41,9 @@ export const Plan = ({
         {title}
       </Typography>
       <List>{materias}</List>
+      <Typography variant="h5" gutterBottom>
+        Total creditos: {sumaCreditos}
+      </Typography>
     </>
   );
 };

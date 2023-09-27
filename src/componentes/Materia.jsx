@@ -7,9 +7,10 @@ import {
 } from '@mui/material';
 
 export const Materia = ({
-  materia,
+  materia = {},
   aprobadas = [],
   setAprobadas = () => {},
+  sumaCreditos = 0,
 }) => {
   const handleClick = () => {
     let nuevasAprobadas = [];
@@ -21,9 +22,20 @@ export const Materia = ({
     setAprobadas(nuevasAprobadas);
   };
 
-  const estaHabilitada = materia.correlativas.every((nombreMateria) => {
-    return aprobadas.includes(nombreMateria);
-  });
+  const estanCorrelativasAprobadas = materia.correlativas.every(
+    (nombreMateria) => {
+      return aprobadas.includes(nombreMateria);
+    },
+  );
+
+  const poseeCreditosRequeridos = materia.creditosRequeridos !== undefined;
+
+  const estanCreditosRequeridosAprobados =
+    sumaCreditos >= materia.creditosRequeridos;
+
+  const estaHabilitada =
+    (poseeCreditosRequeridos && estanCreditosRequeridosAprobados) ||
+    (!poseeCreditosRequeridos && estanCorrelativasAprobadas);
 
   const estaMateriaAprobada = aprobadas.includes(materia.nombreMateria);
 
