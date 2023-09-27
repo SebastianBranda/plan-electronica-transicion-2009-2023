@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Grid } from '@mui/material';
+import { Card, Grid } from '@mui/material';
 import './App.css';
 import { Plan2009Context } from './componentes/Context';
 import { Plan2009 } from './componentes/Plan2009';
@@ -12,10 +12,14 @@ function App() {
     <Plan2009Context.Provider value={{ aprobadas2009, setAprobadas2009 }}>
       <Grid container>
         <Grid item xs={12} md={6}>
-          <Plan2009 />
+          <Card>
+            <Plan2009 />
+          </Card>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Plan2023 />
+          <Card>
+            <Plan2023 />
+          </Card>
         </Grid>
       </Grid>
     </Plan2009Context.Provider>
