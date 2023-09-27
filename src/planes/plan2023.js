@@ -206,7 +206,7 @@ const plan2023 = [
     {
         nombreMateria: "Comunicaciones Inalambricas",
         correlativas: ["Electromagnetismo Aplicado", "Taller de Comunicaciones Digitales"],
-        equivalencias: [],
+        equivalencias: ["Sistemas Inalámbricos"],
         creditos: 4,
     },
     {
@@ -218,7 +218,7 @@ const plan2023 = [
     {
         nombreMateria: "Electronica de Alta Frecuencia",
         correlativas: ["Taller de Diseño de Circuitos Electronicos"],
-        equivalencias: [],
+        equivalencias: ["Transmisores y Receptores de Comunicaciones"],
         creditos: 4,
     },
     {
@@ -230,31 +230,31 @@ const plan2023 = [
     {
         nombreMateria: "Infraestructura de Redes",
         correlativas: ["Taller de Comunicaciones Digitales"],
-        equivalencias: [],
+        equivalencias: ["Infraestructura de Redes Fijas", "Servicios y Redes de Comunicaciones"],
         creditos: 4,
     },
     {
         nombreMateria: "Propagacion y Sistemas Irradiantes",
         correlativas: ["Electromagnetismo Aplicado"],
-        equivalencias: [],
+        equivalencias: ["Propagación y Sistemas Irradiantes"],
         creditos: 4,
     },
     {
         nombreMateria: "Compatibilidad Electromagnetica",
         correlativas: ["Taller de Diseño de Circuitos Electronicos"],
-        equivalencias: [],
+        equivalencias: ["Compatibilidad Electromagnética"],
         creditos: 4,
     },
     {
         nombreMateria: "Laboratorio de Comunicaciones",
         correlativas: ["Taller de Comunicaciones Digitales"],
-        equivalencias: [],
+        equivalencias: ["Laboratorio de Comunicaciones"],
         creditos: 4,
     },
     {
         nombreMateria: "Redes Neuronales y Aprendizaje Profundo",
         correlativas: ["Taller de Procesamiento de Señales"],
-        equivalencias: [],
+        equivalencias: ["Redes Neuronales"],
         creditos: 4,
     },
     {
@@ -272,7 +272,7 @@ const plan2023 = [
     {
         nombreMateria: "Procesamiento del Habla",
         correlativas: ["Taller de Procesamiento de Señales"],
-        equivalencias: [],
+        equivalencias: ["Procesamiento del Habla"],
         creditos: 4,
     },
     {
@@ -284,31 +284,31 @@ const plan2023 = [
     {
         nombreMateria: "Procesamiento Estadistico de Señales",
         correlativas: ["Procesos Estocasticos"],
-        equivalencias: [],
+        equivalencias: ["Procesamiento de Señales II"],
         creditos: 4,
     },
     {
         nombreMateria: "Taller de Sistemas Digitales",
         correlativas: ["Sistemas Digitales", "Señales y Sistemas"],
-        equivalencias: [],
+        equivalencias: ["Sistemas Digitales"],
         creditos: 6,
     },
     {
         nombreMateria: "Diseño y Verificacion Digital",
         correlativas: ["Taller de Sistemas Embebidos"],
-        equivalencias: [],
+        equivalencias: ["Laboratorio de Sistemas Digitales"],
         creditos: 6,
     },
     {
         nombreMateria: "Sistemas Operativos",
         correlativas: ["Taller de Sistemas Embebidos"],
-        equivalencias: [],
+        equivalencias: ["Sistemas Operativos"],
         creditos: 6,
     },
     {
         nombreMateria: "Algoritmos y Estructuras de Datos",
         correlativas: ["Algoritmos y Programacion"],
-        equivalencias: [],
+        equivalencias: ["Algoritmos y Programación II"],
         creditos: 6,
     },
     {
@@ -320,37 +320,37 @@ const plan2023 = [
     {
         nombreMateria: "Instrumentacion y Control de Procesos Industriales",
         correlativas: ["Taller de Automatizacion y Control"],
-        equivalencias: [],
+        equivalencias: ["Instrumentación y Control de Procesos"],
         creditos: 4,
     },
     {
         nombreMateria: "Control Automatico Avanzado",
         correlativas: ["Taller de Automatizacion y Control"],
-        equivalencias: [],
+        equivalencias: ["Control Automático III"],
         creditos: 4,
     },
     {
         nombreMateria: "Control Automatico Multivariable",
         correlativas: ["Taller de Automatizacion y Control"],
-        equivalencias: [],
+        equivalencias: ["Control Automático II"],
         creditos: 4,
     },
     {
         nombreMateria: "Identificacion y Control Adaptativo",
         correlativas: ["Taller de Automatizacion y Control"],
-        equivalencias: [],
+        equivalencias: ["Identificación y Control Adaptativo"],
         creditos: 4,
     },
     {
         nombreMateria: "Electronica de Potencia",
         correlativas: ["Circuitos Microelectronicos"],
-        equivalencias: [],
+        equivalencias: ["Electrónica de Potencia"],
         creditos: 4,
     },
     {
         nombreMateria: "Accionamientos Variables",
         correlativas: ["Circuitos Microelectronicos", "Control Automatico"],
-        equivalencias: [],
+        equivalencias: ["Accionamientos Variables"],
         creditos: 6,
     },
     {
@@ -362,19 +362,19 @@ const plan2023 = [
     {
         nombreMateria: "Robotica Industrial",
         correlativas: ["Taller de Automatizacion y Control"],
-        equivalencias: [],
+        equivalencias: ["Robótica"],
         creditos: 6,
     },
     {
         nombreMateria: "Microelectronica",
         correlativas: ["Circuitos Microelectronicos", "Dispositivos Semiconductores"],
-        equivalencias: [],
+        equivalencias: ["Microelectrónica"],
         creditos: 4,
     },
     {
         nombreMateria: "Laboratorio de Microelectronica",
         correlativas: ["Microelectronica"],
-        equivalencias: [],
+        equivalencias: ["Laboratorio de Microelectrónica"],
         creditos: 4,
     },
     {
@@ -392,13 +392,13 @@ const plan2023 = [
     {
         nombreMateria: "Optoelectronica",
         correlativas: ["Dispositivos Semiconductores"],
-        equivalencias: [],
+        equivalencias: ["Optoelectrónica"],
         creditos: 4,
     },
     {
         nombreMateria: "Introduccion a la Ingenieria Acustica",
         correlativas: ["Señales y Sistemas"],
-        equivalencias: [],
+        equivalencias: ["Acústica"],
         creditos: 4,
     },
     {
@@ -410,25 +410,25 @@ const plan2023 = [
     {
         nombreMateria: "Electroacustica",
         correlativas: ["Circuitos Microelectronicos"],
-        equivalencias: [],
+        equivalencias: ["Electroacústica"],
         creditos: 4,
     },
     {
         nombreMateria: "Audio Profesional",
         correlativas: ["Taller de Diseño de Circuitos Electronicos"],
-        equivalencias: [],
+        equivalencias: ["Audio Profesional"],
         creditos: 4,
     },
     {
         nombreMateria: "Ciberseguridad de Redes e Infraestructuras",
         correlativas: ["Algoritmos y Programacion", "Taller de Comunicaciones Digitales"],
-        equivalencias: [],
+        equivalencias: ["Criptografía y Seguridad Informática"],
         creditos: 6,
     },
     {
         nombreMateria: "Sistemas Graficos",
         correlativas: ["Algoritmos y Programacion"],
-        equivalencias: [],
+        equivalencias: ["Sistemas Gráficos"],
         creditos: 4,
     },
     {
@@ -452,5 +452,5 @@ const plan2023 = [
     },
 ]
 
-// module.exports = { plan2023 }
 export { plan2023 }
+// module.exports = { plan2023 }
