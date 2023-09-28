@@ -1,5 +1,7 @@
 import { Plan } from './Plan';
 import { plan2023 } from '../planes/plan2023';
+import { plan2023Electivas } from '../planes/plan2023Electivas';
+import { plan2023Obligatorias } from '../planes/plan2023Obligatorias';
 import { plan2009MateriasDadasDeBaja } from '../planes/asignaturasElectivasRemovidas';
 import { Plan2009Context } from './Context';
 import { useContext } from 'react';
@@ -36,6 +38,8 @@ export const Plan2023 = () => {
     <Plan
       title={`Plan 2023`}
       materiasPlan={plan2023}
+      materiasElectivasPlan={plan2023Electivas}
+      materiasObligatoriasPlan={plan2023Obligatorias}
       aprobadas={aprobadas}
       creditosMateriasDadasDeBaja={creditosMateriasDadasDeBaja}
       creditosCarrera={228}

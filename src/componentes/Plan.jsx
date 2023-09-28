@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
-import { List, ListItem, Typography } from '@mui/material';
+import { Box, List, ListItem, Typography } from '@mui/material';
 import { Materia } from './Materia';
 
 export const Plan = ({
   materiasPlan = [],
+  materiasElectivasPlan = [],
+  materiasObligatoriasPlan = [],
   title = 'Plan',
   aprobadas,
   setAprobadas,
@@ -25,29 +27,43 @@ export const Plan = ({
     creditosMateriasDadasDeBaja +
     (isNaN(creditosExcedentes) ? 0 : creditosExcedentes);
 
-  const materias = materiasPlan.map((materia, i) => (
-    <ListItem key={i} dense={true}>
-      <Materia
-        materia={materia}
-        aprobadas={aprobadas}
-        setAprobadas={setAprobadas}
-        sumaCreditos={sumaCreditos}
-      />
-    </ListItem>
-  ));
+  const obtenerListaMaterias = (materias) =>
+    materias.map((materia, i) => (
+      <ListItem key={i} dense={true}>
+        <Materia
+          materia={materia}
+          aprobadas={aprobadas}
+          setAprobadas={setAprobadas}
+          sumaCreditos={sumaCreditos}
+        />
+      </ListItem>
+    ));
+
+  const subtitulo = (sub) => (
+    <Box sx={{ pl: 5 }}>
+      <Typography variant="h6" gutterBottom align={'left'}>
+        {sub}
+      </Typography>
+    </Box>
+  );
 
   return (
     <>
       <Typography variant="h4" gutterBottom>
         {title}
       </Typography>
-      <List>{materias}</List>
-      <Typography variant="h6" gutterBottom>
-        Total creditos: {sumaCreditos}
-      </Typography>
-      <Typography variant="h6" gutterBottom>
-        Total carrera: {creditosCarrera}
-      </Typography>
+      {subtitulo('Obligatorias')}
+      <List>{obtenerListaMaterias(materiasObligatoriasPlan)}</List>
+      {subtitulo('Electivas')}
+      <List>{obtenerListaMaterias(materiasElectivasPlan)}</List>
+      <Box sx={{ pl: 5 }}>
+        <Typography variant="h6" gutterBottom align={'left'}>
+          Total creditos: {sumaCreditos}
+        </Typography>
+        <Typography variant="h6" gutterBottom align={'left'}>
+          Total carrera: {creditosCarrera}
+        </Typography>
+      </Box>
     </>
   );
 };
