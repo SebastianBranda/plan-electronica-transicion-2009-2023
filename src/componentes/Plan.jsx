@@ -18,14 +18,16 @@ export const Plan = ({
   const sumaCreditosAprobadas = materiasAprobadas.reduce((acc, curr) => {
     return acc + curr.creditos;
   }, 0);
+
   const creditosExcedentes = materiasAprobadas.reduce((acc, curr) => {
-    return acc + curr.creditoExcedentePorEquivalencia;
+    const creditos = isNaN(curr.creditoExcedentePorEquivalencia)
+      ? 0
+      : curr.creditoExcedentePorEquivalencia;
+    return acc + creditos;
   }, 0);
 
   const sumaCreditos =
-    sumaCreditosAprobadas +
-    creditosMateriasDadasDeBaja +
-    (isNaN(creditosExcedentes) ? 0 : creditosExcedentes);
+    sumaCreditosAprobadas + creditosMateriasDadasDeBaja + creditosExcedentes;
 
   const obtenerListaMaterias = (materias) =>
     materias.map((materia, i) => (

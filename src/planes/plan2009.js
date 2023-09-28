@@ -133,7 +133,7 @@ const plan2009 = [
     {
         nombreMateria: "Introduccion a Proyectos",
         correlativas: ["Diseño de Circuitos Electronicos"],
-        creditos: 6,
+        creditos: 4,
     },
     {
         nombreMateria: "Legislacion y Ejercicio Profesional de la Ingenieria Electronica",

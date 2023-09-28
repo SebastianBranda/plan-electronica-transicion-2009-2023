@@ -197,6 +197,14 @@ const plan2023Obligatorias = [
         creditos: 6,
     },
     {
+        nombreMateria: "Legislacion y Ejercicio Profesional",
+        correlativas: [],
+        creditosRequeridos: 100,
+        equivalencias: [],
+        creditoExcedentePorEquivalencia: 0,
+        creditos: 4,
+    },
+    {
         nombreMateria: "Trabajo Integrador Final de Ingenieria Electronica",
         correlativas: ["Planificacion de Proyectos", "Taller de Sistemas Embebidos", "Taller de Automatizacion y Control", "Taller de Procesamiento de Señales", "Taller de Diseño de Circuitos Electronicos"],
         equivalencias: ["Tesis de Ingenieria Electronica"],

@@ -133,7 +133,7 @@ const plan2009Obligatorias = [
     {
         nombreMateria: "Introduccion a Proyectos",
         correlativas: ["Diseño de Circuitos Electronicos"],
-        creditos: 6,
+        creditos: 4,
     },
     {
         nombreMateria: "Legislacion y Ejercicio Profesional de la Ingenieria Electronica",
@@ -148,16 +148,11 @@ const plan2009Obligatorias = [
         creditos: 4,
     },
     {
-        nombreMateria: "Tesis de Ingenieria Electronica",
+        nombreMateria: "Tesis - Trabajo Profesional",
         correlativas: [],
         creditosRequeridos: 128,
         creditos: 18,
     },
-    {
-        nombreMateria: "Trabajo Profesional de Ingenieria Electronica",
-        correlativas: [],
-        creditosRequeridos: 128,
-        creditos: 18,
-    },]
+]
 
 export { plan2009Obligatorias }
