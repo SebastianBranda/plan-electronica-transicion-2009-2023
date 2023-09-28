@@ -10,7 +10,7 @@ function App() {
 
   return (
     <Plan2009Context.Provider value={{ aprobadas2009, setAprobadas2009 }}>
-      <Grid container>
+      <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Card>
             <Plan2009 />
