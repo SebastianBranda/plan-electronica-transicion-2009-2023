@@ -148,13 +148,7 @@ const plan2009 = [
         creditos: 4,
     },
     {
-        nombreMateria: "Tesis de Ingenieria Electronica",
-        correlativas: [],
-        creditosRequeridos: 128,
-        creditos: 18,
-    },
-    {
-        nombreMateria: "Trabajo Profesional de Ingenieria Electronica",
+        nombreMateria: "Tesis - Trabajo Profesional",
         correlativas: [],
         creditosRequeridos: 128,
         creditos: 18,

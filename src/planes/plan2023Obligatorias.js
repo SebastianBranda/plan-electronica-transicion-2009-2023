@@ -207,7 +207,7 @@ const plan2023Obligatorias = [
     {
         nombreMateria: "Trabajo Integrador Final de Ingenieria Electronica",
         correlativas: ["Planificacion de Proyectos", "Taller de Sistemas Embebidos", "Taller de Automatizacion y Control", "Taller de Procesamiento de Señales", "Taller de Diseño de Circuitos Electronicos"],
-        equivalencias: ["Tesis de Ingenieria Electronica"],
+        equivalencias: ["Tesis - Trabajo Profesional"],
         creditoExcedentePorEquivalencia: 6,
         creditos: 12,
     },
