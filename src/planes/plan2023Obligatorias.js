@@ -197,7 +197,7 @@ const plan2023Obligatorias = [
         creditos: 6,
     },
     {
-        nombreMateria: "Legislacion y Ejercicio Profesional",
+        nombreMateria: "Impacto Social, Ambiental y Desarrollo Sustentable",
         correlativas: [],
         creditosRequeridos: 100,
         equivalencias: [],

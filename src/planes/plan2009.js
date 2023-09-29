@@ -1,3 +1,5 @@
+// Deprecado, no utilizar ni modificar
+
 const plan2009 = [
     {
         nombreMateria: "CBC",

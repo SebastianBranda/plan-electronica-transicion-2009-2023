@@ -1,3 +1,5 @@
+// Deprecado, no utilizar ni modificar
+
 const plan2023 = [
     {
         nombreMateria: "CBC",
@@ -195,6 +197,14 @@ const plan2023 = [
         equivalencias: ["Introduccion a la Economia y Organizacion de la Empresa"],
         creditoExcedentePorEquivalencia: 0,
         creditos: 6,
+    },
+    {
+        nombreMateria: "Impacto Social, Ambiental y Desarrollo Sustentable",
+        correlativas: [],
+        creditosRequeridos: 100,
+        equivalencias: [],
+        creditoExcedentePorEquivalencia: 0,
+        creditos: 4,
     },
     {
         nombreMateria: "Trabajo Integrador Final de Ingenieria Electronica",
