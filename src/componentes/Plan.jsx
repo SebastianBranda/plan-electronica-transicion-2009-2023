@@ -59,11 +59,18 @@ export const Plan = ({
       {subtitulo('Electivas')}
       <List>{obtenerListaMaterias(materiasElectivasPlan)}</List>
       <Box sx={{ pl: 5 }}>
-        <Typography variant="h6" gutterBottom align={'left'}>
-          Total creditos: {sumaCreditos}
+        <Typography variant="subtitle2" gutterBottom align={'left'}>
+          Créditos Obligatorias: {sumaCreditosAprobadas}
         </Typography>
+        <Typography variant="subtitle2" gutterBottom align={'left'}>
+          Créditos Electivas: {creditosMateriasDadasDeBaja + creditosExcedentes}
+        </Typography>
+        {/* <Typography variant="h6" gutterBottom align={'left'}>
+          Total creditos: {sumaCreditos}
+        </Typography> */}
         <Typography variant="h6" gutterBottom align={'left'}>
-          Total carrera: {creditosCarrera}
+          Total carrera: {sumaCreditos} de {creditosCarrera} (
+          {Math.round((100 * sumaCreditos) / creditosCarrera)}%)
         </Typography>
       </Box>
     </>
