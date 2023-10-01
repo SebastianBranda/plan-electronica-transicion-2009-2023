@@ -156,3 +156,4 @@ const plan2009Obligatorias = [
 ]
 
 export { plan2009Obligatorias }
+// module.exports = {plan2009Obligatorias}

@@ -214,3 +214,4 @@ const plan2023Obligatorias = [
 ]
 
 export { plan2023Obligatorias }
+// module.exports = { plan2023Obligatorias }

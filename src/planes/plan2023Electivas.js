@@ -249,3 +249,4 @@ const plan2023Electivas = [
 ]
 
 export { plan2023Electivas }
+// module.exports = { plan2023Electivas }

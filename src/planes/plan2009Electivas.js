@@ -342,3 +342,4 @@ const plan2009Electivas = [
 ]
 
 export { plan2009Electivas }
+// module.exports = {plan2009Electivas}
