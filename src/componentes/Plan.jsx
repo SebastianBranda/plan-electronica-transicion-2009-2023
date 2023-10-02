@@ -3,7 +3,6 @@ import { Box, List, ListItem, Typography } from '@mui/material';
 import { Materia } from './Materia';
 
 export const Plan = ({
-  materiasPlan = [],
   materiasElectivasPlan = [],
   materiasObligatoriasPlan = [],
   title = 'Plan',
@@ -12,12 +11,35 @@ export const Plan = ({
   creditosMateriasDadasDeBaja = 0,
   creditosCarrera = 0,
 }) => {
-  const materiasAprobadas = materiasPlan.filter((materia) => {
+  const materiasObligatoriasAprobadas = materiasObligatoriasPlan.filter(
+    (materia) => {
+      return aprobadas.includes(materia.nombreMateria);
+    },
+  );
+
+  const materiasElectivasAprobadas = materiasElectivasPlan.filter((materia) => {
     return aprobadas.includes(materia.nombreMateria);
   });
-  const sumaCreditosAprobadas = materiasAprobadas.reduce((acc, curr) => {
+
+  const materiasAprobadas = materiasObligatoriasAprobadas.concat(
+    materiasElectivasAprobadas,
+  );
+
+  const sumaCreditosTotalAprobadas = materiasAprobadas.reduce((acc, curr) => {
     return acc + curr.creditos;
   }, 0);
+
+  const sumaCreditosObligatoriasAprobadas =
+    materiasObligatoriasAprobadas.reduce((acc, curr) => {
+      return acc + curr.creditos;
+    }, 0);
+
+  const sumaCreditosElectivasAprobadas = materiasElectivasAprobadas.reduce(
+    (acc, curr) => {
+      return acc + curr.creditos;
+    },
+    0,
+  );
 
   const creditosExcedentes = materiasAprobadas.reduce((acc, curr) => {
     const creditos = isNaN(curr.creditoExcedentePorEquivalencia)
@@ -26,8 +48,10 @@ export const Plan = ({
     return acc + creditos;
   }, 0);
 
-  const sumaCreditos =
-    sumaCreditosAprobadas + creditosMateriasDadasDeBaja + creditosExcedentes;
+  const sumaCreditosTotal =
+    sumaCreditosTotalAprobadas +
+    creditosMateriasDadasDeBaja +
+    creditosExcedentes;
 
   const obtenerListaMaterias = (materias) =>
     materias.map((materia, i) => (
@@ -36,7 +60,7 @@ export const Plan = ({
           materia={materia}
           aprobadas={aprobadas}
           setAprobadas={setAprobadas}
-          sumaCreditos={sumaCreditos}
+          sumaCreditos={sumaCreditosTotal}
         />
       </ListItem>
     ));
@@ -60,17 +84,17 @@ export const Plan = ({
       <List>{obtenerListaMaterias(materiasElectivasPlan)}</List>
       <Box sx={{ pl: 5 }}>
         <Typography variant="subtitle2" gutterBottom align={'left'}>
-          Créditos Obligatorias: {sumaCreditosAprobadas}
+          Créditos Obligatorias: {sumaCreditosObligatoriasAprobadas}
         </Typography>
         <Typography variant="subtitle2" gutterBottom align={'left'}>
-          Créditos Electivas: {creditosMateriasDadasDeBaja + creditosExcedentes}
+          Créditos Electivas:{' '}
+          {sumaCreditosElectivasAprobadas +
+            creditosMateriasDadasDeBaja +
+            creditosExcedentes}
         </Typography>
-        {/* <Typography variant="h6" gutterBottom align={'left'}>
-          Total creditos: {sumaCreditos}
-        </Typography> */}
         <Typography variant="h6" gutterBottom align={'left'}>
-          Total carrera: {sumaCreditos} de {creditosCarrera} (
-          {Math.round((100 * sumaCreditos) / creditosCarrera)}%)
+          Total carrera: {sumaCreditosTotal} de {creditosCarrera} (
+          {Math.round((100 * sumaCreditosTotal) / creditosCarrera)}%)
         </Typography>
       </Box>
     </>
