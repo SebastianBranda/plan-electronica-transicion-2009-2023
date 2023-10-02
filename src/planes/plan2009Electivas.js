@@ -1,47 +1,47 @@
 const plan2009Electivas = [
     {
         nombreMateria: "Análisis Funcional",
-        correlativas: ["Analisis Matematico 3"],
+        correlativas: ["Análisis Matemático 3"],
         creditos: 6,
     },
     {
         nombreMateria: "Análisis Matricial y Métodos Numéricos",
-        correlativas: ["Analisis Matematico 3", "Analisis Numerico 1"],
+        correlativas: ["Análisis Matemático 3", "Análisis Numérico 1"],
         creditos: 6,
     },
     {
         nombreMateria: "Mecánica Racional",
-        correlativas: ["Analisis Matematico 3", "Fisica 1"],
+        correlativas: ["Análisis Matemático 3", "Física 1"],
         creditos: 4,
     },
      {
         nombreMateria: "Física del Estado Sólido",
-        correlativas: ["Fisica 3"],
+        correlativas: ["Física 3"],
         creditos: 6,
     },
     {
         nombreMateria: "Máquinas Eléctricas",
-        correlativas: ["Analisis de Circuitos"],
+        correlativas: ["Análisis de Circuitos"],
         creditos: 6,
     },
     {
         nombreMateria: "Laboratorio de Instalaciones Eléctricas",
-        correlativas: ["Circuitos Electronicos"],
+        correlativas: ["Circuitos Electrónicos"],
         creditos: 4,
     },
     {
         nombreMateria: "Teoría de la Información Codificación",
-        correlativas: ["Procesos Estocasticos"],
+        correlativas: ["Procesos Estocásticos"],
         creditos: 6,
     },
     {
         nombreMateria: "Robótica",
-        correlativas: ["Mecánica Racional", "Control Automatico 1"],
+        correlativas: ["Mecánica Racional", "Control Automático 1"],
         creditos: 6,
     },
     {
         nombreMateria: "Control Automático II",
-        correlativas: ["Control Automatico 1"],
+        correlativas: ["Control Automático 1"],
         creditos: 6,
     },
     {
@@ -51,7 +51,7 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Control Industrial Distribuido",
-        correlativas: ["Control Automatico 1"],
+        correlativas: ["Control Automático 1"],
         creditos: 6,
     },
     {
@@ -61,47 +61,47 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Identificación y Control Adaptativo",
-        correlativas: ["Control Automatico 1"],
+        correlativas: ["Control Automático 1"],
         creditos: 6,
     },
     {
         nombreMateria: "Instrumentación y Control de Procesos",
-        correlativas: ["Control Automatico 1"],
+        correlativas: ["Control Automático 1"],
         creditos: 6,
     },
     {
         nombreMateria: "Laboratorio de Control Automático",
-        correlativas: ["Control Automatico 1", "Diseño de Circuitos Electronicos"],
+        correlativas: ["Control Automático 1", "Diseño de Circuitos Electrónicos"],
         creditos: 6,
     },
     {
         nombreMateria: "Accionamientos Variables",
-        correlativas: ["Control Automatico 1", "Diseño de Circuitos Electronicos"],
+        correlativas: ["Control Automático 1", "Diseño de Circuitos Electrónicos"],
         creditos: 6,
     },
     {
         nombreMateria: "Electrónica de Potencia",
-        correlativas: ["Diseño de Circuitos Electronicos"],
+        correlativas: ["Diseño de Circuitos Electrónicos"],
         creditos: 6,
     },
     {
         nombreMateria: "Comunicaciones Digitales I",
-        correlativas: ["Procesos Estocasticos"],
+        correlativas: ["Procesos Estocásticos"],
         creditos: 6,
     },
     {
         nombreMateria: "Comunicaciones Digitales II",
-        correlativas: ["Comunicacion de Datos", "Comunicaciones Digitales I"],
+        correlativas: ["Comunicación de Datos", "Comunicaciones Digitales I"],
         creditos: 6,
     },
     {
         nombreMateria: "Infraestructura de Redes Fijas",
-        correlativas: ["Comunicacion de Datos"],
+        correlativas: ["Comunicación de Datos"],
         creditos: 6,
     },
     {
         nombreMateria: "Laboratorio de Comunicaciones",
-        correlativas: ["Comunicacion de Datos"],
+        correlativas: ["Comunicación de Datos"],
         creditos: 6,
     },
     {
@@ -116,22 +116,22 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Servicios y Redes de Comunicaciones",
-        correlativas: ["Comunicacion de Datos"],
+        correlativas: ["Comunicación de Datos"],
         creditos: 6,
     },
     {
         nombreMateria: "Sistemas Inalámbricos",
-        correlativas: ["Comunicacion de Datos", "Propagación y Sistemas Irradiantes"],
+        correlativas: ["Comunicación de Datos", "Propagación y Sistemas Irradiantes"],
         creditos: 6,
     },
     {
         nombreMateria: "Transmisores y Receptores de Comunicaciones",
-        correlativas: ["Diseño de Circuitos Electronicos"],
+        correlativas: ["Diseño de Circuitos Electrónicos"],
         creditos: 6,
     },
     {
         nombreMateria: "Video Digital",
-        correlativas: ["Procesos Estocasticos"],
+        correlativas: ["Procesos Estocásticos"],
         creditos: 6,
     },
     {
@@ -151,7 +151,7 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Redes de Computadoras",
-        correlativas: ["Comunicacion de Datos"],
+        correlativas: ["Comunicación de Datos"],
         creditos: 6,
     },
     {
@@ -161,7 +161,7 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Sistemas Digitales",
-        correlativas: ["Analisis Matematico 3", "Tecnica Digital", "Algoritmos y Programacion 1"],
+        correlativas: ["Análisis Matemático 3", "Técnica Digital", "Algoritmos y Programación 1"],
         creditos: 6,
     },
     {
@@ -176,42 +176,42 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Técnica Digital Avanzada",
-        correlativas: ["Tecnica Digital", "Dispositivos Semiconductores"],
+        correlativas: ["Técnica Digital", "Dispositivos Semiconductores"],
         creditos: 6,
     },
     {
         nombreMateria: "Industrias y Productos de Electrónica",
-        correlativas: ["Diseño de Circuitos Electronicos"],
+        correlativas: ["Diseño de Circuitos Electrónicos"],
         creditos: 6,
     },
     {
         nombreMateria: "Microelectrónica",
-        correlativas: ["Circuitos Electronicos"],
+        correlativas: ["Circuitos Electrónicos"],
         creditos: 6,
     },
     {
         nombreMateria: "Optoelectrónica",
-        correlativas: ["Fisica 3", "Electromagnetismo"],
+        correlativas: ["Física 3", "Electromagnetismo"],
         creditos: 6,
     },
     {
         nombreMateria: "Seminario de Electrónica",
-        correlativas: ["Diseño de Circuitos Electronicos"],
+        correlativas: ["Diseño de Circuitos Electrónicos"],
         creditos: 4,
     },
     {
         nombreMateria: "Seminario de Electrónica II",
-        correlativas: ["Diseño de Circuitos Electronicos"],
+        correlativas: ["Diseño de Circuitos Electrónicos"],
         creditos: 4,
     },
     {
         nombreMateria: "Tecnología de los Componentes",
-        correlativas: ["Diseño de Circuitos Electronicos"],
+        correlativas: ["Diseño de Circuitos Electrónicos"],
         creditos: 6,
     },
     {
         nombreMateria: "Procesamiento de Señales I",
-        correlativas: ["Procesos Estocasticos"],
+        correlativas: ["Procesos Estocásticos"],
         creditos: 6,
     },
     {
@@ -226,12 +226,12 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Redes Neuronales",
-        correlativas: ["Procesos Estocasticos"],
+        correlativas: ["Procesos Estocásticos"],
         creditos: 6,
     },
     {
         nombreMateria: "Teoría de Detección y Estimación",
-        correlativas: ["Procesos Estocasticos"],
+        correlativas: ["Procesos Estocásticos"],
         creditos: 6,
     },
     {
@@ -241,17 +241,17 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Acústica",
-        correlativas: ["Analisis de Circuitos"],
+        correlativas: ["Análisis de Circuitos"],
         creditos: 6,
     },
     {
         nombreMateria: "Electroacústica",
-        correlativas: ["Circuitos Electronicos"],
+        correlativas: ["Circuitos Electrónicos"],
         creditos: 6,
     },
     {
         nombreMateria: "Audio Profesional",
-        correlativas: ["Diseño de Circuitos Electronicos"],
+        correlativas: ["Diseño de Circuitos Electrónicos"],
         creditos: 6,
     },
     {
@@ -261,7 +261,7 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Ingeniería Biomédica",
-        correlativas: ["Control Automatico 1", "Sistemas Biológicos"],
+        correlativas: ["Control Automático 1", "Sistemas Biológicos"],
         creditos: 6,
     },
     {
@@ -336,7 +336,7 @@ const plan2009Electivas = [
     },
     {
         nombreMateria: "Algoritmos y Programación II",
-        correlativas: ["Algoritmos y Programacion 1"],
+        correlativas: ["Algoritmos y Programación 1"],
         creditos: 6,
     }
 ]

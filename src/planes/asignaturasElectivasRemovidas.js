@@ -108,11 +108,11 @@ const plan2009MateriasDadasDeBaja = [
         creditoExcedentePorEquivalencia: 6,
     },
     {
-        nombreMateria: "Introduccion al Diseño Asistido por Computadora",
+        nombreMateria: "Introducción al Diseño Asistido por Computadora",
         creditoExcedentePorEquivalencia: 2,
     },
     {
-        nombreMateria: "Analisis Matematico 3",
+        nombreMateria: "Análisis Matemático 3",
         creditoExcedentePorEquivalencia: 4,
     },
 ]
